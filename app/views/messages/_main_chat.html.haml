@@ -1,0 +1,43 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__left-box
+      .main-chat__left-box__current-group
+        test
+      .main-chat__left-box__member-name
+        Member : name
+      .main-chat__left-box__edit-btn
+        = link_to "#", class: "main-chat__left-box__edit-btn--Edit" do
+          Edit
+  .main-chat__message-list
+    .main-chat__message-data
+      .main-chat__message-data__upper-info
+        .main-chat__message-data__upper-info-talker
+          masa
+        .main-chat__message-data__upper-info-data
+          2020/05/08(Fri)08:04
+      .main-chat__message-text
+        今日は２時間ランニング！ 
+    .main-chat__message-data
+      .main-chat__message-data__upper-info
+        .main-chat__message-data__upper-info-talker
+          masa
+        .main-chat__message-data__upper-info-data
+          2020/05/10(Sun)11:04
+      .main-chat__message-text
+        今日は1時間筋トレ！ 
+        
+             
+  .main-chat__messsage-form
+    .main-chat__messsage-form__new-message
+      .main-chat__messsage-form__new-message__input-box
+        %input.main-chat__messsage-form__new-message__input-box__text{:placeholder => "type a message", :type => "text"}
+        .main-chat__messsage-form__new-message__input-box__image
+          %label{class: "main-chat__messsage-form__new-message__input-box__image"}
+            = icon('far', 'image') 
+            %input{type:"file", class: "main-chat__messsage-form__new-message__input-box__image-file" } 
+      %input.main-chat__messsage-form__new-message__input-box__submit{:type => "submit", :value => "Send"}
+      
+       
+    
+
+    
