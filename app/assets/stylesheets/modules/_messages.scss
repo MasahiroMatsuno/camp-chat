@@ -37,14 +37,15 @@
       }
     }
     
-    &__group-list {
-      background-color: #2f3e51;
-      height: calc(100vh - 100px);
-    }
+  &__group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  }
   &__group {
     font-weight: bold;
     color: #ffffff;
     padding: 20px 20px;
+    text-decoration: none;
     &--name {
       font-size: 15px;
       margin-bottom: 5px;
@@ -52,7 +53,7 @@
     &--message {
       font-size: 11px;
     }
-  }  
+  }    
 }
 
 
