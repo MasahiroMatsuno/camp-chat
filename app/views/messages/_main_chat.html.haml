@@ -2,16 +2,16 @@
   .main-chat__group-info
     .main-chat__left-box
       .main-chat__left-box__current-group
-        test
+        = @group.name
       .main-chat__left-box__member-name
-        Member : name
+        - @group.group_users.each do |group_user|
+          = group_user.user.name
       .main-chat__left-box__edit-btn
-        = link_to "#", class: "main-chat__left-box__edit-btn--Edit" do
+        = link_to edit_group_path(@group), class: "main-chat__left-box__edit-btn--Edit" do
           Edit
   
   .main-chat__message-list
     = render @messages
-
   .main-chat__messsage-form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'new-message__input-box__text', placeholder: "type a message"
