@@ -4,6 +4,7 @@
       .main-chat__left-box__current-group
         = @group.name
       .main-chat__left-box__member-name
+        Member :
         - @group.group_users.each do |group_user|
           = group_user.user.name
       .main-chat__left-box__edit-btn
